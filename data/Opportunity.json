@@ -1,0 +1,64 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef1"
+            },
+            "Name": "Pawnee Parks Dept",
+            "Amount": 100000,
+            "StageName": "Qualification",
+            "CloseDate": "2020-06-30"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef2"
+            },
+            "Name": "Bluth Company",
+            "Amount": 20000,
+            "StageName": "Qualification",
+            "CloseDate": "2020-06-30"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef3"
+            },
+            "Name": "Ilvermorny",
+            "Amount": 500000,
+            "StageName": "Qualification",
+            "CloseDate": "2020-06-30"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef4"
+            },
+            "Name": "Central Perk",
+            "Amount": 50000,
+            "StageName": "Qualification",
+            "CloseDate": "2020-06-30"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef5"
+            },
+            "Name": "Dunder Mifflin",
+            "Amount": 2500000,
+            "StageName": "Qualification",
+            "CloseDate": "2020-06-30"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef6"
+            },
+            "Name": "Hogwarts",
+            "Amount": 1000000,
+            "StageName": "Qualification",
+            "CloseDate": "2020-06-30"
+        }
+    ]
+}

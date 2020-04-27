@@ -1,0 +1,24 @@
+sfdx force:data:record:create -s Contact -v "FirstName='Harry' LastName='Potter'"
+sfdx force:data:record:create -s Contact -v "FirstName='Ron' LastName='Weasley'"
+sfdx force:data:record:create -s Contact -v "FirstName='Hermione' LastName='Granger'"
+sfdx force:data:record:create -s Contact -v "FirstName='Draco' LastName='Malfoy'"
+sfdx force:data:record:create -s Contact -v "FirstName='Neville' LastName='Longbottom'"
+sfdx force:data:record:create -s Contact -v "FirstName='Luna' LastName='Lovegood'"
+sfdx force:data:record:create -s Contact -v "FirstName='Albus' LastName='Dumbledore'"
+sfdx force:data:record:create -s Contact -v "FirstName='Severus' LastName='Snape'"
+
+sfdx force:data:record:create -s Opportunity -v "Name='Hogwarts' Amount=1000000 StageName='Qualification' CloseDate=2020-06-30"
+sfdx force:data:record:create -s Opportunity -v "Name='Ilvermorny' Amount=500000 StageName='Qualification' CloseDate=2020-06-30"
+sfdx force:data:record:create -s Opportunity -v "Name='Dunder Mifflin' Amount=2500000 StageName='Qualification' CloseDate=2020-06-30"
+sfdx force:data:record:create -s Opportunity -v "Name='Pawnee Parks Dept' Amount=100000 StageName='Qualification' CloseDate=2020-06-30"
+sfdx force:data:record:create -s Opportunity -v "Name='Central Perk' Amount=50000 StageName='Qualification' CloseDate=2020-06-30"
+sfdx force:data:record:create -s Opportunity -v "Name='Bluth Company' Amount=20000 StageName='Qualification' CloseDate=2020-06-30"
+
+
+mkdir data
+sfdx force:data:tree:export -q "SELECT FirstName, LastName FROM Contact" -d ./data
+sfdx force:data:tree:export -q "SELECT Name, Amount, StageName, CloseDate FROM Opportunity" -d ./data
+
+
+sfdx force:data:tree:import --sobjecttreefiles data/Contact.json
+sfdx force:data:tree:import --sobjecttreefiles data/Opportunity.json

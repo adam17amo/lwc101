@@ -1,0 +1,15 @@
+<apex:page docType="html-5.0" controller="HelloWorldController">
+    <apex:form >
+        <apex:pageBlock title="Hello VF">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Update" reRender="outputValue"/>
+            </apex:pageBlockButtons>
+            <div>
+                <apex:outputText id="outputValue" value="Hello {!greeting}"/>
+            </div>
+            <div>
+                <apex:input id="inputValue" value="{!greeting}"/>
+            </div>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
